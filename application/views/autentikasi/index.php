@@ -12,7 +12,8 @@
     <div class="login-register" style="background-image:url(<?php echo base_url('assets/images/background/login-register.jpg') ?>);">
       <div class="login-box card">
         <div class="card-body">
-          <form class="form-horizontal form-material" id="loginform" action="<?php echo site_url('autentikasi/login') ?>">
+          <!-- <form class="form-horizontal form-material" id="loginform" action="<?php echo site_url('autentikasi/login') ?>"> -->
+          <?php echo form_open('autentikasi/login')?>
             <h3 class="box-title m-b-20">Autentikasi</h3>
             <div class="form-group ">
               <div class="col-xs-12">
@@ -50,7 +51,8 @@
                 <div>Don't have an account? <a href="pages-register.html" class="text-info m-l-5"><b>Sign Up</b></a></div>
               </div>
             </div>
-          </form>
+            <?php echo form_close()?>
+          <!-- </form> -->
           <form class="form-horizontal" id="recoverform" action="index.html">
             <div class="form-group ">
               <div class="col-xs-12">

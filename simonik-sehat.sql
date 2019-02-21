@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 21, 2019 at 01:54 AM
+-- Generation Time: Feb 21, 2019 at 11:55 AM
 -- Server version: 5.7.21-1
 -- PHP Version: 7.0.29-1+b1
 
@@ -61,7 +61,7 @@ CREATE TABLE `anggota_keluarga` (
 CREATE TABLE `pegawai` (
   `id_pegawai` int(11) NOT NULL,
   `nip` varchar(100) NOT NULL,
-  `usename` varchar(100) NOT NULL,
+  `username` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
   `nama_pegawai` varchar(50) NOT NULL,
   `no_telp` varchar(15) NOT NULL,
@@ -75,9 +75,22 @@ CREATE TABLE `pegawai` (
 -- Dumping data for table `pegawai`
 --
 
-INSERT INTO `pegawai` (`id_pegawai`, `nip`, `usename`, `password`, `nama_pegawai`, `no_telp`, `bank`, `norek`, `unit`, `id_akses`) VALUES
+INSERT INTO `pegawai` (`id_pegawai`, `nip`, `username`, `password`, `nama_pegawai`, `no_telp`, `bank`, `norek`, `unit`, `id_akses`) VALUES
 (1, '987987', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin wowo', '987766', 'nhbjhb', '9898', '987', 1),
-(2, '9898', 'bimo', 'c72444a1b9678e55273d5d5f315a6c0e', 'bimo syah', '98798', '98798', '98798', '09789', 2);
+(2, '9898', 'bimo', 'c72444a1b9678e55273d5d5f315a6c0e', 'bimo syah', '98798', '98798', '98798', '09789', 2),
+(3, 'ilbad', 'ilbad', '39846049b3182ff5dd0180bc2b1fca42', 'ilbad', '082324588878', 'nhbjhb', '09798798', 'asdasd', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `restitusi`
+--
+
+CREATE TABLE `restitusi` (
+  `id_restitusi` int(11) NOT NULL,
+  `id_pegawai` int(11) NOT NULL,
+  `tanggal` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -129,6 +142,12 @@ ALTER TABLE `pegawai`
   ADD KEY `id_akses` (`id_akses`);
 
 --
+-- Indexes for table `restitusi`
+--
+ALTER TABLE `restitusi`
+  ADD PRIMARY KEY (`id_restitusi`);
+
+--
 -- Indexes for table `transaksi`
 --
 ALTER TABLE `transaksi`
@@ -153,7 +172,12 @@ ALTER TABLE `akses`
 -- AUTO_INCREMENT for table `pegawai`
 --
 ALTER TABLE `pegawai`
-  MODIFY `id_pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pegawai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `restitusi`
+--
+ALTER TABLE `restitusi`
+  MODIFY `id_restitusi` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `transaksi`
 --

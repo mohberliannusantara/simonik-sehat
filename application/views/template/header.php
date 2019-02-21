@@ -52,16 +52,16 @@
               <!-- Logo icon --><b>
               <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
               <!-- Dark Logo icon -->
-              <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+              <img src="<?php echo base_url('assets/images/logo-icon.png') ?>" alt="homepage" class="dark-logo" />
               <!-- Light Logo icon -->
-              <img src="assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+              <img src="<?php echo base_url('assets/images/logo-light-icon.png') ?>" alt="homepage" class="light-logo" />
             </b>
             <!--End Logo icon -->
             <!-- Logo text --><span>
             <!-- dark Logo text -->
-            <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+            <img src="<?php echo base_url('assets/images/logo-text.png') ?>" alt="homepage" class="dark-logo" />
             <!-- Light Logo text -->
-            <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+            <img src="<?php echo base_url('assets/images/logo-light-text.png') ?>" class="light-logo" alt="homepage" /></span> </a>
           </div>
           <!-- ============================================================== -->
           <!-- End Logo -->
@@ -139,13 +139,13 @@
                               <div class="message-center">
                                 <!-- Message -->
                                 <a href="#">
-                                  <div class="user-img"> <img src="assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                  <div class="user-img"> <img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
                                   <div class="mail-contnet">
                                     <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
                                   </a>
                                   <!-- Message -->
                                   <a href="#">
-                                    <div class="user-img"> <img src="assets/images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                    <div class="user-img"> <img src="<?php echo base_url('assets/images/users/2.jpg') ?>" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
                                     <div class="mail-contnet">
                                       <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
                                     </a>
@@ -292,12 +292,12 @@
                                           <!-- Profile -->
                                           <!-- ============================================================== -->
                                           <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="profile-pic" /></a>
                                             <div class="dropdown-menu dropdown-menu-right scale-up">
                                               <ul class="dropdown-user">
                                                 <li>
                                                   <div class="dw-user-box">
-                                                    <div class="u-img"><img src="assets/images/users/1.jpg" alt="user"></div>
+                                                    <div class="u-img"><img src="<?php echo base_url('') ?>assets/images/users/1.jpg" alt="user"></div>
                                                     <div class="u-text">
                                                       <h4>Steave Jobs</h4>
                                                       <p class="text-muted">varun@gmail.com</p><a href="pages-profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
@@ -310,7 +310,7 @@
                                                   <li role="separator" class="divider"></li>
                                                   <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
                                                   <li role="separator" class="divider"></li>
-                                                  <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                                  <li><a href="<?php echo base_url('autentikasi/logout')?>"><i class="fa fa-power-off"></i> Logout</a></li>
                                                 </ul>
                                               </div>
                                             </li>
@@ -328,9 +328,10 @@
                                       <!-- Sidebar scroll-->
                                       <div class="scroll-sidebar">
                                         <!-- User profile -->
-                                        <div class="user-profile" style="background: url(../assets/images/background/user-info.jpg) no-repeat;">
+                                        <!-- <div class="user-profile" style="background: url(../assets/images/background/user-info.jpg) no-repeat;"> -->
+                                        <div class="user-profile">
                                           <!-- User profile image -->
-                                          <div class="profile-img"> <img src="assets/images/users/1.jpg" alt="user" /> </div>
+                                          <div class="profile-img"> <img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" /> </div>
                                           <!-- User profile text-->
                                           <div class="profile-text"> <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe <span class="caret"></span></a>
                                             <div class="dropdown-menu animated flipInY">
@@ -338,7 +339,7 @@
                                               <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
                                               <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
                                               <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
-                                              <div class="dropdown-divider"></div> <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                                              <div class="dropdown-divider"></div> <a href="<?php echo base_url('autentikasi/logout')?>" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
                                             </div>
                                           </div>
                                         </div>
@@ -386,7 +387,7 @@
                                         <!-- item-->
                                         <a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
                                         <!-- item-->
-                                        <a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+                                        <a href="<?php echo base_url('autentikasi/logout')?>" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
                                       </div>
                                       <!-- End Bottom points-->
                                     </aside>

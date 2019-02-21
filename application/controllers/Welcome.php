@@ -6,12 +6,13 @@ class Welcome extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		
-		if ($this->session->nama_akses == 'admin' ) {
-			redirect('admin/beranda','refresh');
-		}
-		if ($this->session->nama_akses == 'pegawai' ) {
-			redirect('beranda','refresh');
+
+		if ($this->session->logged_in == TRUE) {
+			if ($this->session->nama_akses == 'admin' ) {
+				redirect('admin/beranda','refresh');
+			}else {
+				redirect('beranda','refresh');
+			}
 		}
 	}
 

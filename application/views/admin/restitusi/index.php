@@ -4,12 +4,12 @@
   <!-- ============================================================== -->
   <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-      <h3 class="text-themecolor">Pegawai</h3>
+      <h3 class="text-themecolor">Aktivitas</h3>
     </div>
     <div class="col-md-7 align-self-center">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Pegawai</a></li>
-        <li class="breadcrumb-item active">Daftar Pegawai</li>
+        <li class="breadcrumb-item"><a href="javascript:void(0)">Aktivitas</a></li>
+        <li class="breadcrumb-item active">Daftar Tunggu Restitusi</li>
       </ol>
     </div>
   </div>
@@ -31,14 +31,11 @@
           <div class="card-body">
             <div class="d-flex flex-wrap">
               <div>
-                <h4 class="card-title">Daftar Pegawai</h4>
+                <h4 class="card-title">Daftar Restitusi</h4>
                 <h6 class="card-subtitle">Export data ke Copy, CSV, Excel, PDF & Print</h6>
               </div>
               <div class="ml-auto">
-                <a href="#" rel="tooltip" title="Lihat" class="btn btn-block btn-outline-primary">
-                  <span class="btn-label"><i class="mdi mdi-arrow-expand-all"></span></i>
-                  Tambah Pegawai
-                </a>
+
               </div>
             </div>
             <div class="table-responsive m-t-40">
@@ -60,21 +57,21 @@
                   </tr>
                 </tfoot>
                 <tbody>
-                  <?php foreach ($pegawai as $key => $value): ?>
+                  <?php foreach ($restitusi as $key => $value): ?>
                     <tr>
                       <td><?php echo $value->nip ?></td>
                       <td><?php echo $value->nama_pegawai ?></td>
                       <td><?php echo $value->no_telp ?></td>
                       <td>
-                        <a href="#" onclick="openModal(<?php echo $value->id_pegawai; ?>)" rel="tooltip" title="Lihat" class="btn waves-effect waves-light btn-sm btn-success">
+                        <a href="#" onclick="openModal(<?php echo $value->id_pegawai; ?>)" rel="tooltip" title="Lihat" class="btn waves-effect waves-light btn-success">
                           <span class="btn-label"><i class="mdi mdi-arrow-expand-all"></span></i>
                           Lihat
                         </a>
-                        <a href="<?php echo base_url('Barang/edit/') . $value->id_pegawai ?>" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-warning">
+                        <a href="<?php echo base_url('Barang/edit/') . $value->id_pegawai ?>" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-warning">
                           <span class="btn-label"><i class="mdi mdi-lead-pencil"></span></i>
                           Ubah
                         </a>
-                        <a href="#" id="deleteModal" onclick="deleteModal(<?php echo $value->id_pegawai; ?>)" data-id="<?php echo $value->id_pegawai; ?>" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-sm btn-danger">
+                        <a href="#" id="deleteModal" onclick="deleteModal(<?php echo $value->id_pegawai; ?>)" data-id="<?php echo $value->id_pegawai; ?>" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-danger">
                           <span class="btn-label"><i class="mdi mdi-delete"></span></i>
                           Hapus
                         </a>
