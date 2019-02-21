@@ -45,17 +45,17 @@
               <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                   <tr>
-                    <th>Nama</th>
                     <th>Nip</th>
-                    <th>Jabatan</th>
+                    <th>Nama</th>
+                    <th>Telepon</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
                 <tfoot>
                   <tr>
-                    <th>Nama</th>
                     <th>Nip</th>
-                    <th>Jabatan</th>
+                    <th>Nama</th>
+                    <th>Telepon</th>
                     <th>Aksi</th>
                   </tr>
                 </tfoot>

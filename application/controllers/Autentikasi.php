@@ -9,12 +9,12 @@ class Autentikasi extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->model('Autentikasi_model');
 
-		if ($this->session->nama_akses == 'admin' ) {
-			redirect('admin/beranda','refresh');
-		}
-		if ($this->session->nama_akses == 'pegawai' ) {
-			redirect('beranda','refresh');
-		}
+		// if ($this->session->nama_akses == 'admin' ) {
+		// 	redirect('admin/beranda','refresh');
+		// }
+		// if ($this->session->nama_akses == 'pegawai' ) {
+		// 	redirect('beranda','refresh');
+		// }
 	}
 
 	public function index()
@@ -23,6 +23,7 @@ class Autentikasi extends CI_Controller {
 		$this->load->view('autentikasi/index');
 		$this->load->view('pages-template/footer');
 	}
+
 
 
 	public function Login()
@@ -56,7 +57,6 @@ class Autentikasi extends CI_Controller {
 				);
 
 				$this->session->set_flashdata('user_loggedin', 'You are now logged in');
-
 				if ($userdata['nama_akses'] == 'admin') {
 					$this->session->set_userdata($userdata);
 					redirect('admin/beranda','refresh');
@@ -73,8 +73,7 @@ class Autentikasi extends CI_Controller {
 
 	public function logout()
 	{
-		$userdata = array('username','logged_in');
-		$this->session->unset_userdata($userdata);
+		$this->session->sess_destroy();
 		redirect('welcome','refresh');
 	}
 }

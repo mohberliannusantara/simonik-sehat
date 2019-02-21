@@ -2163,6 +2163,15 @@ ul#themecolors {
   border-top: 1px solid rgba(120, 130, 140, 0.13);
   background: #ffffff; }
 
+  .footer-welcome {
+    bottom: 0;
+    color: #67757c;
+    left: 0px;
+    padding: 17px 15px;
+    position: absolute;
+    right: 0;
+    border-top: 1px solid rgba(120, 130, 140, 0.13);
+    background: #ffffff; }
 /*******************
  Card title
 *******************/
@@ -5027,7 +5036,7 @@ Error Page
     right: 0px; }
 
 .error-body {
-  padding-top: 10%; }
+  padding-top: 8%; }
   .error-body h1 {
     font-size: 100px;
     font-weight: 900;

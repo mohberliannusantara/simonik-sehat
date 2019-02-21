@@ -29,8 +29,8 @@
               <div class="col-md-12 font-14">
                 <div class="checkbox checkbox-primary pull-left p-t-0">
                   <input id="checkbox-signup" type="checkbox">
-                  <label for="checkbox-signup"> Remember me </label>
-                </div> <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right"><!-- <i class="fa fa-lock m-r-5"></i> --> Forgot pwd?</a>
+                  <label for="checkbox-signup"> Ingat selalu </label>
+                </div> <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right"><!-- <i class="fa fa-lock m-r-5"></i> --> Lupa pasword?</a>
               </div>
             </div>
             <div class="form-group text-center m-t-20">
@@ -48,7 +48,7 @@
             </div>
             <div class="form-group m-b-0">
               <div class="col-sm-12 text-center">
-                <div>Don't have an account? <a href="pages-register.html" class="text-info m-l-5"><b>Sign Up</b></a></div>
+                <div>Tidak mempunyai akun? <a href="pages-register.html" class="text-info m-l-5"><b>Buat akun</b></a></div>
               </div>
             </div>
             <?php echo form_close()?>

@@ -6,7 +6,7 @@
     <div class="col-md-7 align-self-center">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="javascript:void(0)">Aktivitas</a></li>
-        <li class="breadcrumb-item active">Daftar Restitusi</li>
+        <li class="breadcrumb-item active">Daftar Tunggu Restitusi</li>
       </ol>
     </div>
   </div>
@@ -29,6 +29,7 @@
                 <thead>
                   <tr>
                     <th>Nip</th>
+                    <th>Nomor Permohonan</th>
                     <th>Nama</th>
                     <th>Telepon</th>
                     <th>Aksi</th>
@@ -37,6 +38,7 @@
                 <tfoot>
                   <tr>
                     <th>Nip</th>
+                    <th>Nomor Permohonan</th>
                     <th>Nama</th>
                     <th>Telepon</th>
                     <th>Aksi</th>
@@ -45,81 +47,65 @@
                 <tbody>
                   <tr>
                     <td>196605311990</td>
+                    <td>0012032019</td>
                     <td>Khakim Bakhtiar</td>
                     <td>089776554332</td>
                     <td>
-                      <a href="#" rel="tooltip" title="Lihat" class="btn waves-effect waves-light btn-sm btn-info">
-                        <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Diterima
-                      </a>
-                      <a href="" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
-                        <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Admedika
-                      </a>
                       <a href="#" id="deleteModal" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-sm btn-warning">
-                        <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Upload
+                        <span class="btn-label"><i class="mdi mdi-arrow-expand-all"></span></i>
+                        Lihat File
                       </a>
                       <a href="#" id="deleteModal" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-sm btn-success">
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Keuangan
+                        Validasi
                       </a>
                     </td>
                   </tr>
                   <tr>
                     <td>196875311990</td>
+                    <td>0012032019</td>
                     <td>Fahmi Ihza M</td>
                     <td>081234554332</td>
                     <td>
-                      <a href="#" rel="tooltip" title="Lihat" class="btn waves-effect waves-light btn-sm btn-info">
-                        <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Diterima
+                      <a href="#" id="deleteModal" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-sm btn-warning">
+                        <span class="btn-label"><i class="mdi mdi-arrow-expand-all"></span></i>
+                        Lihat File
                       </a>
-                      <a href="" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
+                      <a href="#" id="deleteModal" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-sm btn-success">
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Admedika
+                        Validasi
                       </a>
                     </td>
                   </tr>
                   <tr>
                     <td>196682631990</td>
+                    <td>0014032019</td>
                     <td>Bimo Syah</td>
                     <td>082352554332</td>
                     <td>
-                      <a href="#" rel="tooltip" title="Lihat" class="btn waves-effect waves-light btn-sm btn-info">
-                        <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Diterima
-                      </a>
-                      <a href="" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
-                        <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Admedika
-                      </a>
                       <a href="#" id="deleteModal" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-sm btn-warning">
+                        <span class="btn-label"><i class="mdi mdi-arrow-expand-all"></span></i>
+                        Lihat File
+                      </a>
+                      <a href="#" id="deleteModal" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-sm btn-success">
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Upload
+                        Validasi
                       </a>
                     </td>
                   </tr>
                   <tr>
                     <td>196605311990</td>
+                    <td>0010032019</td>
                     <td>Andre Fikri</td>
                     <td>083245554332</td>
                     <td>
-                      <a href="#" rel="tooltip" title="Lihat" class="btn waves-effect waves-light btn-sm btn-info">
-                        <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Diterima
-                      </a>
-                      <a href="" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
-                        <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Admedika
-                      </a>
                       <a href="#" id="deleteModal" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-sm btn-warning">
-                        <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Upload
+                        <span class="btn-label"><i class="mdi mdi-arrow-expand-all"></span></i>
+                        Lihat File
                       </a>
                       <a href="#" id="deleteModal" data-toggle="modal" data-target="#confirmModal" rel="tooltip" title="Hapus" class="btn waves-effect waves-light btn-sm btn-success">
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
-                        Keuangan
+                        Validasi
                       </a>
                     </td>
                   </tr>

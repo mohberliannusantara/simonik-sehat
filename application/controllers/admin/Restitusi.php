@@ -6,7 +6,7 @@ class Restitusi extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Restitusi_model');
+		$this->load->model('restitusi_model');
 		$this->load->library('form_validation');
 
 		if ($this->session->logged_in == TRUE) {
@@ -18,8 +18,10 @@ class Restitusi extends CI_Controller {
 
 	public function index()
 	{
+		$data['restitusi'] = $this->restitusi_model->get();
+
 		$this->load->view('admin/template/header');
-		$this->load->view('admin/restitusi/index');
+		$this->load->view('admin/restitusi/index', $data);
 		$this->load->view('admin/template/footer');
 	}
 }

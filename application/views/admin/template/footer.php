@@ -1,6 +1,12 @@
 <!-- footer -->
 <!-- ============================================================== -->
-<footer class="footer"> © 2017 Admin Press Admin by themedesigner.in </footer>
+<footer class="footer">
+  &copy;
+ <script>
+ document.write(new Date().getFullYear())
+ </script>, made with <i class="mdi mdi-heart"></i> by
+ <a href="https://github.com/mohberliannusantara/warehouse-inventory" target="_blank" class="text-primary">Libo Tim</a> for PT. PLN (Persero)
+ </footer>
 <!-- ============================================================== -->
 <!-- End footer -->
 <!-- ============================================================== -->

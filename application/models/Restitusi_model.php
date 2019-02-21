@@ -11,11 +11,8 @@ class Restitusi_model extends CI_Model{
 
   public function get()
   {
-    $this->db->order_by('pegawai.nama_pegawai', 'ASC');
-    // $this->db->join('jenis_barang', 'barang.id_jenis_barang = jenis_barang.id_jenis_barang');
-    $this->db->join('akses', 'pegawai.id_akses = akses.id_akses');
-    $this->db->where('pegawai.id_akses', 2);
-    $this->db->from('pegawai');
+    $this->db->join('pegawai', 'restitusi.id_pegawai = pegawai.id_pegawai');
+    $this->db->from('restitusi');
 
     $query = $this->db->get();
     return $query->result();
