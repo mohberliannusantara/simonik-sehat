@@ -10,7 +10,7 @@
   <meta name="author" content="">
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('assets/images/favicon.png') ?>">
-  <title>SIMONIK-SEHAT | PT. PLN (Persero)</title>
+  <title>Pengguna | PT. PLN (Persero)</title>
   <!-- Bootstrap Core CSS -->
   <link href="<?php echo base_url('assets/plugins/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
   <!-- morris CSS -->
@@ -52,16 +52,19 @@
               <!-- Logo icon --><b>
               <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
               <!-- Dark Logo icon -->
-              <img src="<?php echo base_url('assets/images/logo-icon.png') ?>" alt="homepage" class="dark-logo" />
+              <!-- <img src="<?php echo base_url('assets/images/logo-icon.png') ?>" alt="homepage" class="dark-logo" /> -->
+              <img src="<?php echo base_url('assets/images/favicon.png') ?>" style="height:48px;" alt="homepage" class="dark-logo" />
+              <!-- <h5>wowo</h5> -->
               <!-- Light Logo icon -->
               <img src="<?php echo base_url('assets/images/logo-light-icon.png') ?>" alt="homepage" class="light-logo" />
             </b>
             <!--End Logo icon -->
             <!-- Logo text --><span>
             <!-- dark Logo text -->
-            <img src="<?php echo base_url('assets/images/logo-text.png') ?>" alt="homepage" class="dark-logo" />
+            <!-- <img src="<?php echo base_url('assets/images/logo-text.png') ?>" alt="homepage" class="dark-logo" /> -->
+
             <!-- Light Logo text -->
-            <img src="<?php echo base_url('assets/images/logo-light-text.png') ?>" class="light-logo" alt="homepage" /></span> </a>
+            <img class="light-logo" alt="homepage" /></span> </a>
           </div>
           <!-- ============================================================== -->
           <!-- End Logo -->
@@ -285,8 +288,9 @@
                                           <!-- Language -->
                                           <!-- ============================================================== -->
                                           <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-us"></i></a>
-                                            <div class="dropdown-menu dropdown-menu-right scale-up"> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-in"></i> India</a> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> French</a> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-cn"></i> China</a> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-de"></i> Dutch</a> </div>
+                                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-id"></i></a>
+                                            <div class="dropdown-menu dropdown-menu-right scale-up"> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-in"></i> India</a> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> French</a> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-cn"></i> China</a> <a class="dropdown-item" href="#"><i class="flag-icon flag-icon-de"></i> Dutch</a>
+                                            </div>
                                           </li>
                                           <!-- ============================================================== -->
                                           <!-- Profile -->
@@ -310,7 +314,7 @@
                                                   <li role="separator" class="divider"></li>
                                                   <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
                                                   <li role="separator" class="divider"></li>
-                                                  <li><a href="<?php echo base_url('autentikasi/logout')?>"><i class="fa fa-power-off"></i> Logout</a></li>
+                                                  <li><a href="<?php echo base_url('kesehatan/autentikasi/logout')?>"><i class="fa fa-power-off"></i> Logout</a></li>
                                                 </ul>
                                               </div>
                                             </li>
@@ -331,15 +335,15 @@
                                         <!-- <div class="user-profile" style="background: url(../assets/images/background/user-info.jpg) no-repeat;"> -->
                                         <div class="user-profile">
                                           <!-- User profile image -->
-                                          <div class="profile-img"> <img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" /> </div>
+                                          <!-- <div class="profile-img"> <img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" /> </div> -->
                                           <!-- User profile text-->
-                                          <div class="profile-text"> <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe <span class="caret"></span></a>
+                                          <div class="profile-text"> <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">PT. PLN (Persero) <span class="caret"></span></a>
                                             <div class="dropdown-menu animated flipInY">
                                               <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
                                               <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
                                               <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
                                               <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
-                                              <div class="dropdown-divider"></div> <a href="<?php echo base_url('autentikasi/logout')?>" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                                              <div class="dropdown-divider"></div> <a href="<?php echo base_url('kesehatan/autentikasi/logout')?>" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
                                             </div>
                                           </div>
                                         </div>
@@ -347,32 +351,22 @@
                                         <!-- Sidebar navigation-->
                                         <nav class="sidebar-nav">
                                           <ul id="sidebarnav">
-                                            <li class="nav-small-cap">PERSONAL</li>
+                                            <li class="nav-small-cap">Menu</li>
                                             <li>
-                                              <a href="starter-kit.html" aria-expanded="false"><i class="fa fa-circle"></i><span class="hide-menu">Starter Kit</span></a>
+                                              <a href="beranda" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Beranda</span></a>
                                             </li>
                                             <li>
-                                              <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-map-marker"></i><span class="hide-menu">With Dropdown</span></a>
+                                              <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Pegawai</span></a>
                                               <ul aria-expanded="false" class="collapse">
-                                                <li><a href="map-google.html">Google Maps</a></li>
-                                                <li><a href="map-vector.html">Vector Maps</a></li>
+                                                <li><a href="pegawai">Data Kepegawaian</a></li>
+                                                <li><a href="restitusi">Pengajuan Restitusi</a></li>
+                                                <li><a href="keluarga">Pengajuan Anggota Keluarga</a></li>
                                               </ul>
                                             </li>
                                             <li>
-                                              <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Multi level dd</span></a>
+                                              <a class="has-arrow " href="restitusi" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Aktifitas</span></a>
                                               <ul aria-expanded="false" class="collapse">
-                                                <li><a href="javascript:void(0)">item 1.1</a></li>
-                                                <li><a href="javascript:void(0)">item 1.2</a></li>
-                                                <li>
-                                                  <a class="has-arrow" href="#" aria-expanded="false">Menu 1.3</a>
-                                                  <ul aria-expanded="false" class="collapse">
-                                                    <li><a href="javascript:void(0)">item 1.3.1</a></li>
-                                                    <li><a href="javascript:void(0)">item 1.3.2</a></li>
-                                                    <li><a href="javascript:void(0)">item 1.3.3</a></li>
-                                                    <li><a href="javascript:void(0)">item 1.3.4</a></li>
-                                                  </ul>
-                                                </li>
-                                                <li><a href="#">item 1.4</a></li>
+                                                <li><a href="verifikasi">Daftar Permohonan</a></li>
                                               </ul>
                                             </li>
                                           </ul>
@@ -387,7 +381,7 @@
                                         <!-- item-->
                                         <a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
                                         <!-- item-->
-                                        <a href="<?php echo base_url('autentikasi/logout')?>" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+                                        <a href="<?php echo base_url('kesehatan/autentikasi/logout')?>" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
                                       </div>
                                       <!-- End Bottom points-->
                                     </aside>

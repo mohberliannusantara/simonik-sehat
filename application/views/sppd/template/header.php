@@ -364,27 +364,13 @@
                                             <li>
                                               <a class="has-arrow " href="restitusi" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Aktifitas</span></a>
                                               <ul aria-expanded="false" class="collapse">
-                                                <li><a href="restitusi">Daftar Restitusi</a></li>
-                                                <li><a href="verifikasi">Daftar Tunggu Restitusi</a></li>
+                                                <li><a href="restitusi">Daftar SPPD</a></li>
+                                                <li><a href="verifikasi">Daftar Tunggu SPPD</a></li>
                                               </ul>
                                             </li>
-                                            <!-- <li>
-                                              <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-arrange-send-backward"></i><span class="hide-menu">Multi level dd</span></a>
-                                              <ul aria-expanded="false" class="collapse">
-                                                <li><a href="javascript:void(0)">item 1.1</a></li>
-                                                <li><a href="javascript:void(0)">item 1.2</a></li>
-                                                <li>
-                                                  <a class="has-arrow" href="#" aria-expanded="false">Menu 1.3</a>
-                                                  <ul aria-expanded="false" class="collapse">
-                                                    <li><a href="javascript:void(0)">item 1.3.1</a></li>
-                                                    <li><a href="javascript:void(0)">item 1.3.2</a></li>
-                                                    <li><a href="javascript:void(0)">item 1.3.3</a></li>
-                                                    <li><a href="javascript:void(0)">item 1.3.4</a></li>
-                                                  </ul>
-                                                </li>
-                                                <li><a href="#">item 1.4</a></li>
-                                              </ul>
-                                            </li> -->
+                                            <li>
+                                              <a href="laporan" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Laporan</span></a>
+                                            </li>
                                           </ul>
                                         </nav>
                                         <!-- End Sidebar navigation -->

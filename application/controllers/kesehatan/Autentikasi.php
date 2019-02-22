@@ -7,7 +7,7 @@ class Autentikasi extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->library('form_validation');
-		$this->load->model('Autentikasi_model');
+		$this->load->model('kesehatan/Autentikasi_model');
 
 		// if ($this->session->nama_akses == 'admin' ) {
 		// 	redirect('admin/beranda','refresh');
@@ -20,7 +20,7 @@ class Autentikasi extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('pages-template/header');
-		$this->load->view('autentikasi/index');
+		$this->load->view('kesehatan/autentikasi/index');
 		$this->load->view('pages-template/footer');
 	}
 
@@ -32,7 +32,7 @@ class Autentikasi extends CI_Controller {
 		$this->form_validation->set_rules('password', 'Password', 'trim|required');
 
 		if($this->form_validation->run() === FALSE){
-			redirect('autentikasi');
+			redirect('kesehatan/autentikasi');
 		}else {
 			$username = $this->input->post('username');
 			$password = md5($this->input->post('password'));
@@ -59,10 +59,10 @@ class Autentikasi extends CI_Controller {
 				$this->session->set_flashdata('user_loggedin', 'You are now logged in');
 				if ($userdata['nama_akses'] == 'admin') {
 					$this->session->set_userdata($userdata);
-					redirect('admin/beranda','refresh');
+					redirect('kesehatan/admin/beranda','refresh');
 				}else {
 					$this->session->set_userdata($userdata);
-					redirect('beranda','refresh');
+					redirect('kesehatan/beranda','refresh');
 				}
 			} else {
 				echo "<script>alert('Informasi Akun yang Anda Masukkan Salah') </script>";

@@ -15,9 +15,10 @@
 
 <body class="offline-doc">
 	<div class="error-box error-body text-center">
-		<h1>SISTEM MONITORING</h1>
+		<h1>SIMONIK-PD</h1>
 		<!-- <h3 class="text-uppercase">Sistem Monitoring Kesehatan</h3> -->
-		<p class="">MENGELOLA BERBAGAI INFORMASI TENTANG SPPD & ASURANSI KESEHATAN</p>
+		<p class="">MENGELOLA BERBAGAI INFORMASI TENTANG DATA RESTITUSI KESEHATAN & PERJALANAN DINAS</p>
+		<!-- <h3 class="text-white">MENGELOLA BERBAGAI INFORMASI TENTANG DATA RESTITUSI KESEHATAN & PERJALANAN DINAS</h3> -->
 		<!-- <a href="autentikasi" class="btn btn-info btn-lg waves-effect waves-light m-b-40">
 		KELOLA DATA
 	</a> -->
@@ -28,7 +29,7 @@
 		<div class="col-md-4">
 			<div class="card card-inverse card-danger card-outline">
 				<div class="card-body">
-					<a href="autentikasi">
+					<a href="sppd/autentikasi">
 						<div class="carousel-inner">
 							<div class="carousel-item flex-column carousel-item-next carousel-item-left">
 								<img src="<?php echo base_url('assets/images/icon/Airport_100px.png') ?>" style="padding:10px;" alt="">
@@ -63,7 +64,7 @@
 		<div class="col-md-4">
 			<div class="card card-inverse card-info card-outline">
 				<div class="card-body">
-					<a href="autentikasi">
+					<a href="kesehatan/autentikasi">
 						<div class="carousel-inner">
 							<div class="carousel-item flex-column carousel-item-next carousel-item-left">
 								<img src="<?php echo base_url('assets/images/icon/Stethoscope_100px.png') ?>" style="padding:10px;" alt="">
