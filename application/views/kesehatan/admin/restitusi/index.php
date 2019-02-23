@@ -21,11 +21,14 @@
                 <h6 class="card-subtitle">Export data ke Copy, CSV, Excel, PDF & Print</h6>
               </div>
               <div class="ml-auto">
-
+                <a href="#" rel="tooltip" title="Tambah" class="btn btn-sm btn-block btn-outline-primary">
+                  <span class="btn-label"><i class="mdi mdi-arrow-expand-all"></span></i>
+                  Log Aktifitas
+                </a>
               </div>
             </div>
             <div class="table-responsive m-t-40">
-              <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+              <table id="myTable" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                   <tr>
                     <th>Nip</th>

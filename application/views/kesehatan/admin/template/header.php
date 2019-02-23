@@ -27,7 +27,7 @@
   <![endif]-->
 </head>
 
-<body class="fix-header card-no-border">
+<body class="fix-sidebar fix-header card-no-border">
   <!-- ============================================================== -->
   <!-- Preloader - style you can find in spinners.css -->
   <!-- ============================================================== -->
@@ -48,7 +48,7 @@
           <!-- Logo -->
           <!-- ============================================================== -->
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="<?php echo site_url('kesehatan/admin/beranda') ?>">
               <!-- Logo icon --><b>
               <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
               <!-- Dark Logo icon -->
@@ -337,14 +337,7 @@
                                           <!-- User profile image -->
                                           <!-- <div class="profile-img"> <img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" /> </div> -->
                                           <!-- User profile text-->
-                                          <div class="profile-text"> <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">PT. PLN (Persero) <span class="caret"></span></a>
-                                            <div class="dropdown-menu animated flipInY">
-                                              <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
-                                              <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
-                                              <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
-                                              <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
-                                              <div class="dropdown-divider"></div> <a href="<?php echo base_url('kesehatan/autentikasi/logout')?>" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
-                                            </div>
+                                          <div class="profile-text"> <a href="<?php echo site_url('kesehatan/admin/beranda') ?>" role="button" aria-haspopup="true" aria-expanded="true">PT. PLN (Persero)<span class="caret"></span></a>
                                           </div>
                                         </div>
                                         <!-- End User profile text-->
@@ -356,24 +349,24 @@
                                               <a href="beranda" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Beranda</span></a>
                                             </li>
                                             <li>
-                                              <a class="has-arrow " href="pegawai" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Pegawai</span></a>
+                                              <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Pegawai</span></a>
                                               <ul aria-expanded="false" class="collapse">
-                                                <li><a href="pegawai">Daftar Pegawai</a></li>
+                                                <li><a href="<?php echo site_url('kesehatan/admin/pegawai') ?>">Daftar Pegawai</a></li>
+                                                <li><a href="<?php echo site_url('kesehatan/admin/restitusi') ?>">Daftar Restitusi</a></li>
                                               </ul>
                                             </li>
                                             <li>
-                                              <a class="has-arrow " href="restitusi" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Aktifitas</span></a>
+                                              <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Aktifitas</span></a>
                                               <ul aria-expanded="false" class="collapse">
-                                                <li><a href="restitusi">Daftar Restitusi</a></li>
-                                                <li><a href="verifikasi">Daftar Tunggu Restitusi</a></li>
-                                                <li><a href="verifikasi">Daftar Pengajuan</a></li>
+                                                <li><a href="<?php echo site_url('kesehatan/admin/verifikasi') ?>">Daftar Tunggu Restitusi</a></li>
+                                                <li><a href="<?php echo site_url('kesehatan/admin/pengajuan') ?>">Daftar Pengajuan Keluarga</a></li>
                                               </ul>
                                             </li>
                                             <li>
-                                              <a class="has-arrow " href="restitusi" aria-expanded="false"><i class="mdi mdi-printer"></i><span class="hide-menu">Laporan</span></a>
+                                              <a class="has-arrow " href="#" aria-expanded="false"><i class="mdi mdi-printer"></i><span class="hide-menu">Laporan</span></a>
                                               <ul aria-expanded="false" class="collapse">
-                                                <li><a href="restitusi">Pegawai</a></li>
-                                                <li><a href="verifikasi">Restitusi</a></li>
+                                                <li><a href="<?php echo site_url('kesehatan/admin/laporan') ?>">Pegawai</a></li>
+                                                <li><a href="<?php echo site_url('kesehatan/admin/laporan') ?>">Restitusi</a></li>
                                               </ul>
                                             </li>
                                           </ul>

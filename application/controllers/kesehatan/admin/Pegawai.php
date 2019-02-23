@@ -24,4 +24,11 @@ class Pegawai extends CI_Controller {
 		$this->load->view('kesehatan/admin/pegawai/index', $data);
 		$this->load->view('kesehatan/admin/template/footer');
 	}
+
+	public function create()
+	{
+		$this->load->view('kesehatan/admin/template/header');
+		$this->load->view('kesehatan/admin/pegawai/create');
+		$this->load->view('kesehatan/admin/template/footer');
+	}
 }

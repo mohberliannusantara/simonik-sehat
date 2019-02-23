@@ -5,8 +5,8 @@ class Beranda extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('kesehatan/template/header');
-		$this->load->view('kesehatan/beranda/index');
-		$this->load->view('kesehatan/template/footer');
+		$this->load->view('kesehatan/admin/template/header');
+		$this->load->view('kesehatan/admin/beranda/index');
+		$this->load->view('kesehatan/admin/template/footer');
 	}
 }
