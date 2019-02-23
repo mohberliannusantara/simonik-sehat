@@ -51,6 +51,8 @@
 <script src="<?php echo base_url('assets/plugins/styleswitcher/jQuery.style.switcher.js') ?>"></script>
 <!-- This is data table -->
 <script src="<?php echo base_url('assets/plugins/datatables/jquery.dataTables.min.js') ?>"></script>
+<!-- jQuery file upload -->
+<script src="<?php echo base_url('assets/plugins/dropify/dist/js/dropify.min.js') ?>"></script>
 <!-- start - This is for export functionality only -->
 <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
@@ -105,6 +107,46 @@ $('#example23').DataTable({
     buttons: [
         'copy', 'csv', 'excel', 'pdf', 'print'
     ]
+});
+$(document).ready(function() {
+    // Basic
+    $('.dropify').dropify();
+
+    // Translated
+    $('.dropify-fr').dropify({
+        messages: {
+            default: 'Glissez-déposez un fichier ici ou cliquez',
+            replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+            remove: 'Supprimer',
+            error: 'Désolé, le fichier trop volumineux'
+        }
+    });
+
+    // Used events
+    var drEvent = $('#input-file-events').dropify();
+
+    drEvent.on('dropify.beforeClear', function(event, element) {
+        return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+    });
+
+    drEvent.on('dropify.afterClear', function(event, element) {
+        alert('File deleted');
+    });
+
+    drEvent.on('dropify.errors', function(event, element) {
+        console.log('Has Errors');
+    });
+
+    var drDestroy = $('#input-file-to-destroy').dropify();
+    drDestroy = drDestroy.data('dropify')
+    $('#toggleDropify').on('click', function(e) {
+        e.preventDefault();
+        if (drDestroy.isDropified()) {
+            drDestroy.destroy();
+        } else {
+            drDestroy.init();
+        }
+    })
 });
 </script>
 </body>

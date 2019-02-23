@@ -20,25 +20,26 @@
           <div class="card-body">
             <form action="#">
               <div class="form-body">
-                <h3 class="card-title">Person Info</h3>
+                <h3 class="card-title">Data Pengajuan</h3>
                 <hr>
                 <div class="row p-t-20">
-                  <div class="col-md-7">
+                  <div class="col-md-6">
                     <div class="form-group">
-                      <label class="control-label">Name Lengkap</label>
+                      <label class="control-label">Nama Lengkap</label>
                       <input type="text" id="firstName" class="form-control" placeholder="John doe">
-                      <small class="form-control-feedback"> This is inline help </small> </div>
+                      <small class="form-control-feedback"> Masukkan nama lengkap </small>
                     </div>
-                    <!--/span-->
-                    <div class="col-md-5">
+                    </div>
+                    <div class="col-md-6">
                       <div class="form-group has-danger">
-                        <label class="control-label">Akte Kelahiran</label>
-                        <input type="file" class="form-control-file" name="thumbnail">
+                        <h5>Akte Kelahiran <span class="text-danger">*</span></h5>
+                        <div class="controls">
+                          <input type="file" name="file" class="form-control" required>
+                        </div>
+                        <small class="form-control-feedback"> Lampirkan file akte kelahiran </small>
                       </div>
                     </div>
-                    <!--/span-->
                   </div>
-                  <!--/row-->
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group has-success">
@@ -47,21 +48,21 @@
                           <option value="">Laki-laki</option>
                           <option value="">Perempuan</option>
                         </select>
-                        <small class="form-control-feedback"> Select your gender </small> </div>
+                        <small class="form-control-feedback"> Pilih Jenis Kelamin </small>
                       </div>
-                      <!--/span-->
+                      </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="control-label">Date of Birth</label>
+                          <label class="control-label">Tanggal Lahir</label>
                           <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                          <small class="form-control-feedback"> Masukkan tanggal lahir </small>
                         </div>
                       </div>
-                      <!--/span-->
                     </div>
                   </div>
                   <div class="form-actions">
                     <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                    <button type="button" class="btn btn-inverse">Cancel</button>
+                    <button type="button" class="btn btn-inverse" onclick="history.go(-1);">Cancel</button>
                   </div>
                 </form>
               </div>

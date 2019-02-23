@@ -26,50 +26,51 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <label class="control-label">Nama Lengkap</label>
-                      <input type="text" id="firstName" class="form-control" placeholder="John doe">
-                      <small class="form-control-feedback"> Masukkan nama pegawai </small> </div>
+                      <input type="text" id="firstName" class="form-control" placeholder="John doe" autofocus>
+                      <small class="form-control-feedback"> Masukkan nama pegawai </small>
                     </div>
-                    <!--/span-->
-                    <div class="col-md-6 ">
-                      <div class="form-group has-danger">
-                        <label class="control-label">NIP</label>
-                        <input type="number" min="0" id="firstName" class="form-control" placeholder="contoh : 196106231989032001">
-                        <small class="form-control-feedback"> Masukkan nomor induk pegawai </small>
-                      </div>
-                    </div>
-                    <!--/span-->
                   </div>
-                  <!--/row-->
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group has-success">
-                        <label class="control-label">Jenis Kelamin</label>
-                        <select class="form-control custom-select">
-                          <option value="">Laki-laki</option>
-                          <option value="">Perempuan</option>
-                        </select>
-                        <small class="form-control-feedback"> Pilih jenis kelamin pegawai </small>
-                      </div>
+                  <!--/span-->
+                  <div class="col-md-6 ">
+                    <div class="form-group has-danger">
+                      <label class="control-label">NIP</label>
+                      <input type="number" min="0" id="firstName" class="form-control" placeholder="contoh : 196106231989032001">
+                      <small class="form-control-feedback"> Masukkan nomor induk pegawai </small>
                     </div>
-                    <!--/span-->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="control-label">Tanggal Lahir</label>
-                        <input type="date" class="form-control" placeholder="dd/mm/yyyy">
-                        <small class="form-control-feedback"> Boleh tidak diisi </small>
-                      </div>
-                    </div>
-                    <!--/span-->
                   </div>
+                  <!--/span-->
                 </div>
-                <div class="form-actions">
-                  <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                  <button type="button" class="btn btn-inverse">Cancel</button>
+                <!--/row-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group has-success">
+                      <label class="control-label">Jenis Kelamin</label>
+                      <select class="form-control custom-select">
+                        <option value="">Laki-laki</option>
+                        <option value="">Perempuan</option>
+                      </select>
+                      <small class="form-control-feedback"> Pilih jenis kelamin pegawai </small>
+                    </div>
+                  </div>
+                  <!--/span-->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="control-label">Tanggal Lahir</label>
+                      <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                      <small class="form-control-feedback"> Boleh tidak diisi </small>
+                    </div>
+                  </div>
+                  <!--/span-->
                 </div>
-              </form>
-            </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
+                <button type="button" class="btn btn-inverse">Cancel</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>

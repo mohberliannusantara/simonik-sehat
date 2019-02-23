@@ -1,11 +1,11 @@
 <div class="page-wrapper">
   <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-      <h3 class="text-themecolor">Aktivitas</h3>
+      <h3 class="text-themecolor">Pegawai</h3>
     </div>
     <div class="col-md-7 align-self-center">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Aktivitas</a></li>
+        <li class="breadcrumb-item"><a href="javascript:void(0)">Pegawai</a></li>
         <li class="breadcrumb-item active">Daftar Restitusi</li>
       </ol>
     </div>
@@ -21,7 +21,7 @@
                 <h6 class="card-subtitle">Export data ke Copy, CSV, Excel, PDF & Print</h6>
               </div>
               <div class="ml-auto">
-                <a href="#" rel="tooltip" title="Tambah" class="btn btn-sm btn-block btn-outline-primary">
+                <a href="<?php echo site_url('kesehatan/admin/verifikasi') ?>" rel="tooltip" title="Tambah" class="btn btn-sm btn-block btn-outline-primary">
                   <span class="btn-label"><i class="mdi mdi-arrow-expand-all"></span></i>
                   Log Aktifitas
                 </a>
@@ -55,7 +55,7 @@
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
                         Diterima
                       </a>
-                      <a href="" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
+                      <a href="#" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
                         Admedika
                       </a>
@@ -78,7 +78,7 @@
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
                         Diterima
                       </a>
-                      <a href="" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
+                      <a href="#" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
                         Admedika
                       </a>
@@ -93,7 +93,7 @@
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
                         Diterima
                       </a>
-                      <a href="" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
+                      <a href="#" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
                         Admedika
                       </a>
@@ -112,7 +112,7 @@
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
                         Diterima
                       </a>
-                      <a href="" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
+                      <a href="#" rel="tooltip" title="Ubah" class="btn waves-effect waves-light btn-sm btn-danger">
                         <span class="btn-label"><i class="mdi mdi-check"></span></i>
                         Admedika
                       </a>

@@ -5,8 +5,8 @@ class Verifikasi extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('admin/template/header');
-		$this->load->view('admin/verifikasi/index');
-		$this->load->view('admin/template/footer');
+		$this->load->view('kesehatan/admin/template/header');
+		$this->load->view('kesehatan/admin/verifikasi/index');
+		$this->load->view('kesehatan/admin/template/footer');
 	}
 }

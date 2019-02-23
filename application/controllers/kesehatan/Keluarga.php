@@ -9,10 +9,17 @@ class Keluarga extends CI_Controller{
     //Codeigniter : Write Less Do More
   }
 
-  function index()
+  public function index()
   {
     $this->load->view('kesehatan/template/header');
-    $this->load->view('kesehatan/keluarga/insert');
+    $this->load->view('kesehatan/keluarga/index');
+    $this->load->view('kesehatan/template/footer');
+  }
+
+  public function create()
+  {
+    $this->load->view('kesehatan/template/header');
+    $this->load->view('kesehatan/keluarga/create');
     $this->load->view('kesehatan/template/footer');
   }
 
