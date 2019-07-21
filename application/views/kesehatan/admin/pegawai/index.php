@@ -32,7 +32,7 @@
             <div class="d-flex flex-wrap">
               <div>
                 <h4 class="card-title">Daftar Pegawai</h4>
-                <h6 class="card-subtitle">Export data ke Copy, CSV, Excel, PDF & Print</h6>
+                <h6 class="card-subtitle">Menampilkan data tentang daftar pegawai yang terdaftar</h6>
               </div>
               <div class="ml-auto">
                 <a href="pegawai/create" rel="tooltip" title="Tambah" class="btn btn-sm btn-block btn-outline-primary">

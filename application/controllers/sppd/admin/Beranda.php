@@ -5,8 +5,8 @@ class Beranda extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('admin/template/header');
-		$this->load->view('admin/beranda/index');
-		$this->load->view('admin/template/footer');
+		$this->load->view('sppd/admin/template/header');
+		$this->load->view('sppd/admin/beranda/index');
+		$this->load->view('sppd/admin/template/footer');
 	}
 }

@@ -18,7 +18,7 @@
             <h4 class="m-b-0 text-white">Form Input Data Pegawai Baru</h4>
           </div>
           <div class="card-body">
-              <form action="<?php echo base_url('kesehatan/pegawai/insert') ?>" method="post">
+            <form action="#">
               <div class="form-body">
                 <h3 class="card-title">Person Info</h3>
                 <hr>

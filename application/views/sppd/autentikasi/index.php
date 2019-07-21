@@ -13,7 +13,7 @@
       <div class="login-box card">
         <div class="card-body">
           <!-- <form class="form-horizontal form-material" id="loginform" action="<?php echo site_url('autentikasi/login') ?>"> -->
-          <?php echo form_open('autentikasi/login')?>
+          <?php echo form_open('sppd/autentikasi/login')?>
             <h3 class="box-title m-b-20">Autentikasi</h3>
             <div class="form-group ">
               <div class="col-xs-12">

@@ -6,12 +6,12 @@ class Pegawai extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Pegawai_model');
+		$this->load->model('kesehatan/Pegawai_model');
 		$this->load->library('form_validation');
 
 		if ($this->session->logged_in == TRUE) {
-			if ($this->session->nama_akses == 'pegawai' ) {
-				redirect('beranda','refresh');
+			if ($this->session->nama_akses == 'admin' ) {
+				redirect('kesehatan/admin/beranda','refresh');
 			}
 		}
 	}
@@ -20,8 +20,8 @@ class Pegawai extends CI_Controller {
 	{
 		$data['pegawai'] = $this->Pegawai_model->get();
 
-		$this->load->view('template/header');
-		$this->load->view('pegawai/index', $data);
-		$this->load->view('template/footer');
+		$this->load->view('kesehatan/template/header');
+		$this->load->view('kesehatan/pegawai/index', $data);
+		$this->load->view('kesehatan/template/footer');
 	}
 }

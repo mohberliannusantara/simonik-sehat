@@ -32,7 +32,7 @@ class Autentikasi extends CI_Controller {
 		$this->form_validation->set_rules('password', 'Password', 'trim|required');
 
 		if($this->form_validation->run() === FALSE){
-			redirect('autentikasi');
+			redirect('sppd/autentikasi');
 		}else {
 			$username = $this->input->post('username');
 			$password = md5($this->input->post('password'));
@@ -59,10 +59,10 @@ class Autentikasi extends CI_Controller {
 				$this->session->set_flashdata('user_loggedin', 'You are now logged in');
 				if ($userdata['nama_akses'] == 'admin') {
 					$this->session->set_userdata($userdata);
-					redirect('admin/beranda','refresh');
+					redirect('sppd/admin/beranda','refresh');
 				}else {
 					$this->session->set_userdata($userdata);
-					redirect('beranda','refresh');
+					redirect('sppd/beranda','refresh');
 				}
 			} else {
 				echo "<script>alert('Informasi Akun yang Anda Masukkan Salah') </script>";

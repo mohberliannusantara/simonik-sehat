@@ -32,7 +32,7 @@
           <div class="card">
             <div class="card-body">
               <div class="row">
-                <div class="col-12">
+                <!-- <div class="col-12"> -->
                   <div class="d-flex flex-wrap">
                     <div>
                       <h4 class="card-title">Aktivitas</h4>
@@ -44,7 +44,7 @@
                         Lihat Restitusi
                       </a>
                     </div>
-                  </div>
+                  <!-- </div> -->
                 </div>
                 <div class="col-12">
                   <div class="table-responsive">

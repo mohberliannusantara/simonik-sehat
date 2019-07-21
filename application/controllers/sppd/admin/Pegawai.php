@@ -6,12 +6,12 @@ class Pegawai extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Pegawai_model');
+		$this->load->model('sppd/Pegawai_model');
 		$this->load->library('form_validation');
 
 		if ($this->session->logged_in == TRUE) {
 			if ($this->session->nama_akses == 'pegawai' ) {
-				redirect('beranda','refresh');
+				redirect('sppd/beranda','refresh');
 			}
 		}
 	}
@@ -20,8 +20,15 @@ class Pegawai extends CI_Controller {
 	{
 		$data['pegawai'] = $this->Pegawai_model->get();
 
-		$this->load->view('admin/template/header');
-		$this->load->view('admin/pegawai/index', $data);
-		$this->load->view('admin/template/footer');
+		$this->load->view('sppd/admin/template/header');
+		$this->load->view('sppd/admin/pegawai/index', $data);
+		$this->load->view('sppd/admin/template/footer');
+	}
+
+	public function create()
+	{
+		$this->load->view('sppd/admin/template/header');
+		$this->load->view('sppd/admin/pegawai/create');
+		$this->load->view('sppd/admin/template/footer');
 	}
 }
